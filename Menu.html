@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Menu</title>
+    <style>
+      /* Additional styles specific to this example */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      /* Form styles */
+      .delivery-form {
+        margin: 0 auto;
+      }
+
+      .form-input {
+        margin-bottom: 1rem;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .delivery-form {
+          width: 500px;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#191D20]">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 right-0 left-0 bg-[#191D20]">
+      <div
+        class="max-w-[1200px] mx-auto flex justify-between items-center text-white py-5 px-7"
+      >
+        <h1 class="lg:text-2xl font-bold">
+          Black Tiger <span class="text-[#d47946]">Coffee</span>
+        </h1>
+        <i class="fa-solid fa-bars md:hidden"></i>
+        <ul class="gap-3 lg:gap-10 hidden md:flex">
+          <li>
+            <a href="./index.html" class="hover:text-[#d47946] duration-100"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./Menu.html" class="hover:text-[#d47946] duration-100"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#d47946] duration-100">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#d47946] duration-100">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#d47946] duration-100">Location</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="max-w-[1200px] mx-auto py-[100px]">
+      <h1
+        class="pt-12 text-center text-2xl md:text-3xl lg:mb-[30px] text-white lg:text-left"
+      >
+        <span class="highlight-text">Menu</span>
+      </h1>
+      <div class="h-auto flex flex-col items-center lg:items-left">
+        <div
+          class="milkteas grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 gap-5 lg:gap-[70px] text-white"
+        >
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300 text-white"
+          >
+            <img
+              src="./Images/m6.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md">
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300"
+          >
+            <img
+              src="./Images/m2.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md">
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300"
+          >
+            <img
+              src="./Images/m3.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md">
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300"
+          >
+            <img
+              src="./Images/m4.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md">
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300"
+          >
+            <img
+              src="./Images/m5.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold text-white">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md">
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300"
+          >
+            <img
+              src="./Images/m6.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md">
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300 hidden lg:block"
+          >
+            <img
+              src="./Images/m7.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button
+              class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md w-full"
+            >
+              Get Now
+            </button>
+          </div>
+          <div
+            class="milktea flex flex-col w-[280px] bg-[#272A2F] rounded-md p-4 hover:bg-[#272A2F]/30 duration-300 hidden lg:block"
+          >
+            <img
+              src="./Images/m8.jpg"
+              class="w-full rounded-md h-[250px] object-cover object-bottom"
+            />
+            <div class="mt-5">
+              <h1 class="font-bold">Dalgona Coffee</h1>
+              <p class="font-thin text-white/60">Dark Roost</p>
+              <span class="font-extrabold">P 120</span>
+            </div>
+            <button
+              class="text-center bg-[#AA5D26] mt-5 py-2 rounded-md w-full"
+            >
+              Get Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <form
+        class="delivery-form text-white p-8 shadow-md rounded-md w-full my-[100px] md:w-[600px]"
+        id="deliveryForm"
+      >
+        <h2 class="text-2xl font-semibold mb-6">Delivery Information</h2>
+
+        <!-- Name Input -->
+        <div class="form-input">
+          <label for="name" class="block text-sm font-medium text-white"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="mt-1 p-2 w-full border rounded-md text-black w-full"
+          />
+        </div>
+
+        <!-- Contact Number Input -->
+        <div class="form-input">
+          <label for="contact" class="block text-sm font-medium text-white"
+            >Contact Number</label
+          >
+          <input
+            type="tel"
+            id="contact"
+            name="contact"
+            class="mt-1 p-2 w-full border rounded-md text-black w-full"
+          />
+        </div>
+
+        <!-- Email Address Input -->
+        <div class="form-input">
+          <label for="email" class="block text-sm font-medium text-white"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 p-2 w-full border rounded-md text-black w-full"
+          />
+        </div>
+
+        <!-- Address Input -->
+        <div class="form-input">
+          <label for="address" class="block text-sm font-medium text-white"
+            >Address</label
+          >
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            class="mt-1 p-2 w-full border rounded-md text-black w-full"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="button"
+          onclick="submitForm()"
+          class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="successModal" class="modal">
+        <div class="modal-content bg-white p-8 shadow-md rounded-md">
+          <p class="text-2xl font-semibold mb-4">Order Successful!</p>
+          <p>Your order has been submitted successfully.</p>
+          <button
+            onclick="closeModal()"
+            class="mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function submitForm() {
+        // Here you can add logic to handle the form submission (e.g., send data to a server).
+        // For simplicity, this example shows a modal on button click.
+        document.getElementById("successModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("successModal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
